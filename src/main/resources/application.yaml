@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=oracle)(port=49170))(connect_data=(service_name=xe)))
+    username: system
+    password: oracle
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    database: ORACLE
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: trace
+      type:
+        descriptor:
+          sql:
+            BasicBinder: TRACE
