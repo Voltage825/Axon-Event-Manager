@@ -4,7 +4,8 @@
 
 The premise for this application is to help you manage your broken events in an Axon framework based application.
 
-Connect it directly to the same database as your Axon based application and rebuild your read side for best effect.
+Connect it directly to the same database as your Axon based application and rebuild your read side for best effect. 
+Supports ony Axon 3.0.X
 
 ___
 ### Use Cases
@@ -34,3 +35,7 @@ Sample:
 curl -H "Content-Type: application/json" -X POST -d '{"payload": "<com.val.axon.sample.api.domain.client.events.ClientCreatedEvent><clientAggregateId>client1</clientAggregateId><client><name>two</name></client></com.val.axon.sample.api.domain.client.events.ClientCreatedEvent>","payloadRevision": "1"}' http://localhost:8080/events/b456b290-05b9-4083-a9ba-d0deb4e17d91
 ```
 
+### Licencing
+<a href="http://www.wtfpl.net/"><img
+       src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+       width="80" height="15" alt="WTFPL" /></a> Do what you want.
